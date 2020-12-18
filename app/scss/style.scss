@@ -1,0 +1,561 @@
+@import "vars";
+@import "global";
+@import "fonts";
+
+// _________________________________________________________________________________________________
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #cd9e50;
+  // background-image: url(../images/background1.png);
+  background-image: url(../images/bg4.jpg);
+  background-attachment: fixed;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center;
+  height: 100%;
+  width: 100%;
+}
+
+// __________________________________START_HEADER__________________________________________________________
+
+.header__menu-btn {
+  cursor: pointer;
+  width: 60px;
+  margin-top: 50px;
+  // display: none;
+}
+.header__menu-row {
+  width: 100%;
+  background-color: #000;
+  height: 5px;
+  margin-bottom: 12px;
+}
+.header {
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    position: relative;
+    font-size: 100px;
+    color: rgb(0, 0, 0);
+    border-radius: 9px;
+    padding: 0 5px;
+    padding-left: 100px;
+    margin-top: 53px;
+
+    font-family: "Conv_4012";
+    font-weight: 400;
+    background-color: #e7a058d3;
+    box-shadow: 0px 1px 30px 20px#e8a25b;
+    transition: all 0.5s;
+    img {
+      position: absolute;
+      width: 110px;
+      height: 110px;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      // margin-right: 10px;
+      left: 0;
+    }
+    &:hover {
+      background-color: #dd7f0be1;
+      box-shadow: 0px 1px 30px 20px#dd800b;
+      transform-origin: center;
+      transform: scale(1.05);
+    }
+  }
+
+  span {
+    color: rgb(179, 19, 19);
+  }
+}
+
+#mobileMenu {
+  text-align: center;
+  background-color: #e7a058d0;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  border-radius: 20px;
+  padding: 10px 0 0 0;
+  margin-top: 10px;
+  font-family: "Grenze Gotisch", cursive;
+  display: flex;
+  justify-content: space-between;
+  // padding-left: 150px;
+
+  a {
+    width: 100%;
+    margin-bottom: 10px;
+    border: #000 solid 2px;
+    border-radius: 20px;
+    padding: 10px;
+    background-color: #e7a058;
+    // margin-left: 50%;
+    // box-shadow: 0px 1px 30px 20px #e8a25b;
+    transition: all 0.5s;
+  }
+  display: none;
+}
+
+#hideMenu {
+  text-align: center;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  border-radius: 9px;
+  padding: 0 10px;
+  margin-top: 50px;
+  font-family: "Grenze Gotisch", cursive;
+  display: flex;
+  justify-content: space-between;
+  // padding-left: 150px;
+  a {
+    width: 220px;
+    border: #000 solid 2px;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: #e7a058;
+    // margin-left: 50%;
+    // box-shadow: 0px 1px 30px 20px #e8a25b;
+    transition: all 0.5s;
+    &:hover {
+      background-color: #dd800b;
+      // box-shadow: 0px 1px 30px 20px#dd800b;
+      transform-origin: center;
+      // transform: scale(1.05);
+    }
+  }
+}
+
+.header__menu {
+  img {
+    position: absolute;
+    width: 73px;
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    transform: rotate(28deg);
+    transition: all 0.5s;
+  }
+  .zesp {
+    img {
+      left: 174px;
+      top: 57px;
+    }
+  }
+  .spiw {
+    img {
+      left: 174px;
+      top: 57px;
+    }
+  }
+
+  .galer {
+    img {
+      left: 174px;
+      top: 57px;
+    }
+  }
+  .kont {
+    img {
+      left: 174px;
+      top: 57px;
+    }
+  }
+}
+// __________________________________END_HEADER__________________________________________________________
+
+// __________________________________START_ONAS__________________________________________________________
+.onas {
+  width: 100%;
+  display: block;
+  margin-bottom: 50px;
+}
+.onas__wrap {
+  margin-top: 35px;
+  padding: 10px;
+}
+
+.title-adg {
+  color: rgb(71, 56, 6);
+}
+
+.onas__title {
+  padding-top: 20px;
+
+  .title-adg {
+    color: #7c140f;
+  }
+  font-size: 50px;
+  font-family: "Conv_4012";
+  text-align: center;
+  span {
+    color: rgb(179, 19, 19);
+  }
+}
+
+.border-top,
+.border-bottom {
+  border: 3px solid #362a1c;
+  height: 12px;
+  position: relative;
+}
+.border-top:before,
+.border-top:after,
+.border-bottom:before,
+.border-bottom:after {
+  content: "";
+  position: absolute;
+  border: 3px solid #362a1c;
+  width: 19px;
+  height: 20px;
+}
+.border-top:before {
+  border-radius: 0 100%;
+  left: -26px;
+  top: -26px;
+}
+.border-top:after {
+  border-radius: 100% 0;
+  right: -26px;
+  top: -26px;
+}
+.border-bottom:before {
+  border-radius: 100% 0;
+  left: -26px;
+  bottom: -26px;
+}
+.border-bottom:after {
+  border-radius: 0 100%;
+  right: -26px;
+  bottom: -26px;
+}
+.center {
+  background-color: #f7cc878f;
+  border-left: 3px solid #362a1c;
+  border-right: 3px solid #362a1c;
+}
+.center p {
+  margin: 0;
+  padding: 20px 30px;
+  color: #000;
+
+  font-family: "Grenze Gotisch", cursive;
+
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  line-height: 1.2;
+}
+
+// __________________________________END_ONAS__________________________________________________________
+
+// __________________________________START_SPIEWY__________________________________________________________
+
+.spiewy {
+  margin-top: 60px;
+  margin-bottom: 50px;
+  audio {
+    max-width: 350px;
+    min-width: 349px;
+    outline: none;
+    border-radius: 30px;
+    transition: all 0.5s linear;
+  }
+  audio:hover,
+  audio:focus,
+  audio:active {
+    box-shadow: 15px 15px 20px #6e6049e0;
+    transform: scale(1.05);
+  }
+}
+.spiewy__title {
+  padding-top: 20px;
+  color: #7c140f;
+  font-size: 50px;
+  font-family: "Grenze Gotisch", cursive;
+  text-align: center;
+}
+
+.img__box {
+  margin-bottom: 20px;
+  margin-left: 30px;
+  display: flex;
+  clear: right;
+  align-items: center;
+  .baryt {
+    width: 450px;
+    height: auto;
+  }
+  .alena {
+    width: 400px;
+    height: auto;
+  }
+  .nauc {
+    width: 400px;
+    height: auto;
+  }
+  img {
+    width: 300px;
+    height: auto;
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.562);
+    padding: 5px;
+    border-radius: 20px;
+  }
+}
+
+.img__text {
+  margin-left: 60px;
+  font-family: "Grenze Gotisch", cursive;
+  color: #181110;
+  font-size: 31px;
+  border: #000 solid 2px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.img--text {
+  margin-top: 10px;
+  display: none;
+  width: 100%;
+  font-family: "Grenze Gotisch", cursive;
+  color: #181110;
+  font-size: 31px;
+  border: #000 solid 2px;
+  padding: 10px;
+  border-radius: 20px;
+  font-weight: 700;
+}
+.nauc-text {
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+.img__bas {
+  float: right;
+  clear: right;
+  margin-right: 30px;
+  .img__text {
+    margin-right: 100px;
+  }
+}
+
+.img-text {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.img__wrapper {
+  padding: 0 20px;
+}
+.img__helen {
+  float: right;
+  clear: right;
+  margin-bottom: 20px;
+  .img__text {
+    margin-right: 100px;
+  }
+}
+.spiewy__text-wrapper {
+  text-align: center;
+  font-family: "Grenze Gotisch", cursive;
+  margin-bottom: 20px;
+  font-size: 30px;
+  padding: 0 20px;
+  font-weight: 700;
+  img {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.audio__box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 2px solid #743042;
+  border-left: none;
+  border-right: none;
+  &:nth-child(1) {
+    border-top: 2px solid #743042;
+  }
+}
+
+.audio__text {
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 500;
+  .tyt {
+    font-weight: 700;
+  }
+}
+
+// __________________________________END_SPIEWY__________________________________________________________
+
+/* __________________________START_GALERJA_____________________________________________________ */
+
+.gallery {
+  max-width: 100%;
+  background-color: #f7cc878f;
+  border-radius: 20px;
+  border: 3px solid #362a1c;
+  margin: 50px 0;
+  .gallery__wrapper {
+    max-width: 100%;
+  }
+  .gallery-title {
+    padding-top: 20px;
+    color: #7c140f;
+    font-size: 50px;
+    font-family: "Grenze Gotisch", cursive;
+    text-align: center;
+  }
+  .gallery__box {
+    text-align: center;
+
+    a {
+      margin: 20px 0px;
+      video {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.562);
+        padding: 5px;
+        border-radius: 20px;
+      }
+      img {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.562);
+        padding: 5px;
+        border-radius: 20px;
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+/* __________________________END_GALERJA_____________________________________________________ */
+
+/* __________________________START_KONTAKT_____________________________________________________ */
+
+.kontakt {
+  margin-top: 50px;
+  margin-bottom: 80px;
+  .center {
+    padding: 0 20px;
+    p {
+      padding: 20px 10px;
+    }
+  }
+  .kontekt-hover {
+    margin: 0 auto;
+    max-width: 600px;
+  }
+  .kontekt-hover:hover a {
+    opacity: 0.3;
+    transition: 0.8s;
+  }
+  .kontekt-hover:hover a:hover {
+    opacity: 1;
+    transition: 0.8s;
+  }
+  font-size: 30px;
+  .kontekt-title {
+    padding-top: 20px;
+    color: #7c140f;
+    font-size: 50px;
+    text-align: center;
+    font-family: "Grenze Gotisch", cursive;
+  }
+  .kontakt__text {
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  .kontakt-adres {
+    position: relative;
+    margin-bottom: 25px;
+    a {
+      font-family: "Grenze Gotisch", cursive;
+      font-weight: 700;
+      padding-left: 40px;
+      transition: all 0.5s linear;
+    }
+    &::before {
+      position: absolute;
+      content: "\f041";
+      font-family: "icomoon";
+      left: 0;
+    }
+  }
+  .kontakt-tel {
+    position: relative;
+    a {
+      font-family: "Grenze Gotisch", cursive;
+      font-weight: 700;
+      padding-left: 40px;
+      transition: all 0.5s linear;
+    }
+    &::before {
+      position: absolute;
+      content: "\e942";
+      font-family: "icomoon";
+      left: 0;
+    }
+  }
+  .kontakt-mail {
+    position: relative;
+    margin-top: 20px;
+    font-family: "Grenze Gotisch", cursive;
+    font-weight: 700;
+    padding-left: 40px;
+    &::before {
+      position: absolute;
+      content: "\f003";
+      font-family: "icomoon";
+      left: 0;
+    }
+  }
+  .kontakt-konto {
+    position: relative;
+    margin-top: 30px;
+    font-family: "Fugaz One", cursive;
+    padding-left: 60px;
+    span {
+      padding-left: 30%;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(../images/pig3.png);
+      width: 80px;
+      height: 80px;
+      display: block;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top center;
+      // content: "\e93b";
+      // font-family: "icomoon";
+      left: -17px;
+      top: -20px;
+    }
+  }
+}
+
+/* __________________________END_KONTAKT_____________________________________________________ */
+
+// __________________________________START_PRODUCTS__________________________________________________________
+
+// __________________________________END_PRODUCTS__________________________________________________________
+
+@import "media";
